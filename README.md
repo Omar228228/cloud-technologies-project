@@ -14,6 +14,25 @@ Use Terraform CLI to manage your AWS IaC. There are 3 commands available: `init`
 
     - copy code for AWS provider to `provider.tf` from [this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) page
     - if you are using `aws-vault`, you don't need to specify `region` property, as `aws-vault` injects `AWS_REGION` environment variable for you
+
+        So, `provider.tf` looks like this:
+
+        ```
+        terraform {
+          required_providers {
+            aws = {
+              source  = "hashicorp/aws"
+              version = "4.59.0"
+            }
+          }
+        }
+
+        provider "aws" {}
+
+        ```
+
+        This file is listed in `.gitignore`, so it stays only on your machine.
+
     - run `terraform init` to install the provider
     - check what `terraform plan` outputs
 
