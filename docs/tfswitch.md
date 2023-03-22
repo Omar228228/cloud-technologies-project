@@ -23,7 +23,7 @@ tfswitch
 Also it prints the path, where Terraform binary is installed.
 This is important, because by default (logged as user and not `root`) Terraform is installed to `/home/USERNAME/bin`.
 
-As in [Setting AWS env vars](./prerequisites.md#setting-aws-env-vars) section, you must set some variable to tell the system, that terraform lives there, so you don't need to specify full path to `terraform` executable, when trying to run it.
+As in [Setting AWS env vars](./prerequisites.md#setting-aws-env-vars) section, you must set some variable to tell the system, that `terraform` binary lives there, so you don't need to specify full path, when trying to run it.
 
 For that, open `.bashrc` with your favourite editor:
 
