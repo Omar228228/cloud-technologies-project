@@ -14,6 +14,12 @@ echo 1.4.0 > .terraform-version
 
 `tfswitch` will detect `.terraform-version` file and install `1.4.0` version for you.
 
+For this, just run:
+
+```bash
+tfswitch
+```
+
 Also it prints the path, where Terraform binary is installed.
 This is important, because by default (logged as user and not `root`) Terraform is installed to `/home/USERNAME/bin`.
 
