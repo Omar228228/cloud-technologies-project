@@ -5,7 +5,7 @@
 
     > **Note**
     > `AWS_REGION` env var is set only if you set `AWS_DEFAULT_REGION` env var.
-    > To set it permanently in your `.bashrc`, follow [Setting AWS env vars](./prerequisites.md#setting-aws-env-vars)) guide.
+    > To set it permanently in your `.bashrc`, follow [Setting AWS env vars](./prerequisites.md#setting-aws-env-vars) guide.
         
     So, `provider.tf` looks like this:
 

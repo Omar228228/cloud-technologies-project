@@ -16,7 +16,7 @@ In subshell `aws-vault` injects environment variables, such as `AWS_ACCESS_KEY_I
 
 > **Note**
 > `AWS_REGION` env var is set only if you set `AWS_DEFAULT_REGION` env var.
-> To set it permanently in your `.bashrc`, follow [Setting AWS env vars](#setting-aws-env-vars)) guide.
+> To set it permanently in your `.bashrc`, follow [Setting AWS env vars](#setting-aws-env-vars) guide.
 
 ## Setting AWS env vars
 
