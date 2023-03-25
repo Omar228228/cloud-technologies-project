@@ -14,4 +14,5 @@ Follow these steps, to setup your Terraform project:
 |[Prerequisites](./docs/prerequisites.md)|
 |[Selecting Terraform version](./docs/tfswitch.md)|
 |[Init provider](./docs/provider.md)|
+|[Declaring variables](./docs/vars.md)|
 

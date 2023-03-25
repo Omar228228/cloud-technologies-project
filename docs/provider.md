@@ -35,3 +35,4 @@
 
 4. Check what `terraform plan` outputs
 
+[Next step (Declaring variables) →](./vars.tf)
