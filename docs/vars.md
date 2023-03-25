@@ -60,7 +60,7 @@ var_name = var_value
 Replace `var_name` with your variable name and `var_value`
 with appropriate variable value, according to its `var_type`.
 
-Finally, you will finish with `dev.tfvars` having the next contents:
+Finally, you will finish with [`dev.tfvars`](../dev.tfvars) having the next contents:
 
 ```hcl
 namespace   = "ct"
@@ -72,4 +72,29 @@ delimiter   = "-"
 
 > **Note**
 > You can change `namespace` to `cloud-technologies` or something like that.
+
+## Defining variables for other stages
+
+You might want to define variables with other values in other stages
+, so create [`prod.tfvars`](../prod.tfvars) and [`stage.tfvars`](../stage.tfvars) by:
+
+```bash
+cp dev.tfvars prod.tfvars
+cp dev.tfvars stage.tfvars
+```
+
+In those files change `stage` variable value to appropriate stage.
+Leave other variables unchanged.
+
+For example, [`prod.tfvars`](../prod.tfvars) will have the next contents:
+
+```hcl
+namespace   = "cloud_technologies_project"
+stage       = "prod"
+environment = "lpnu"
+label_order = ["stage", "namespace", "environment", "name", "attributes"]
+delimiter   = "-"
+```
+
+Note, that `stage = "dev"` is replaced with `stage = "prod"`.
 
