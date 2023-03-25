@@ -52,5 +52,17 @@ env | grep -o AWS.*
 
 Finally, try running a subshell with `aws-vault` and check with previous command, which AWS variables are set.
 
+If everything is set properly, you should see something like this:
+
+```
+AWS_DEFAULT_REGION=eu-central-1
+AWS_REGION=eu-central-1
+AWS_VAULT_BACKEND=pass
+AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+AWS_VAULT=YOUR_PROFILE
+AWS_VAULT_PASS_PASSWORD_STORE_DIR=/home/USERNAME/.YOUR_PASS_DIR/YOUR_PASS_PROFILE
+```
+
 [Next step (Selecting Terraform version) →](./tfswitch.md)
 
