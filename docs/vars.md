@@ -1,6 +1,6 @@
 # Declaring variables
 
-> **Info**
+> **Note**
 > In this section you declare global variables, that will be used
 > by other modules, such as `label`.
 
@@ -70,6 +70,6 @@ label_order = ["stage", "namespace", "environment", "name", "attributes"]
 delimiter   = "-"
 ```
 
-> **Info**
+> **Note**
 > You can change `namespace` to `cloud-technologies` or something like that.
 
