@@ -79,8 +79,7 @@ You might want to define variables with other values in other stages
 , so create [`prod.tfvars`](../prod.tfvars) and [`stage.tfvars`](../stage.tfvars) by:
 
 ```bash
-cp dev.tfvars prod.tfvars
-cp dev.tfvars stage.tfvars
+cp dev.tfvars prod.tfvars && cp dev.tfvars stage.tfvars
 ```
 
 In those files change `stage` variable value to appropriate stage.
