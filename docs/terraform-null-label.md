@@ -49,7 +49,7 @@ to [`context.tf`](../context.tf).
 
 > **Warning**
 > Some variables in [`context.tf`](../context.tf) are already declared in [`vars.tf`](../vars.tf).
-> This means you **should** delete [`vars.tf`].
+> This means you **should** delete [`vars.tf`](../vars.tf) file.
 > Otherwise, `terraform` will warn you about duplicate variable declaration.
 
 ## Using context in `labels` module
