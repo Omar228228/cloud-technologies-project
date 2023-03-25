@@ -45,7 +45,11 @@ module "labels" {
 ## Declaring `context` module and variable
 
 To declare `context` variable for `labels` module, copy the contents of [this file](https://github.com/cloudposse/terraform-null-label/blob/master/examples/complete/context.tf)
-to [`context.tf`](../context.tf).
+to [`context.tf`](../context.tf) and delete everything above the comment:
+
+```hcl
+# Copy contents of cloudposse/terraform-null-label/variables.tf here
+```
 
 > **Warning**
 > Some variables in [`context.tf`](../context.tf) are already declared in [`vars.tf`](../vars.tf).
@@ -76,7 +80,8 @@ module "base_labels" {
 ```
 
 Replace hardcoded `namespace` and `stage` with appropriate vars, any other properties become commented
-. The resulting [`labels.tf`](../labels.tf) should have the next contents:
+. Also add missing properties, such as `envrionment`.
+The resulting [`labels.tf`](../labels.tf) should have the next contents:
 
 ```hcl
 module "base_labels" {
@@ -84,8 +89,11 @@ module "base_labels" {
   # Cloud Posse recommends pinning every module to a specific version
   version = "0.25.0"
 
-  namespace = var.namespace
-  stage     = var.stage
+  namespace   = var.namespace
+  environment = var.environment
+  stage       = var.stage
+  label_order = var.label_order
+  delimiter   = var.delimiter
   # name       = "bastion"
   # attributes = ["public"]
   # delimiter  = "-"
@@ -105,4 +113,4 @@ Finally, you should init `labels` module, as it references `cloudposse/label/nul
 terraform init
 ```
 
-
+[Next step (Creating DynamoDB tables) →](./dynamodb.md)

@@ -16,4 +16,5 @@ Follow these steps, to setup your Terraform project:
 |[Init provider](./docs/provider.md)|
 |[Declaring variables](./docs/vars.md)|
 |[Terraform Null Label](./docs/terraform-null-label.md)|
+|[Creating DynamoDB tables](./docs/dynamodb.md)|
 
