@@ -97,3 +97,5 @@ delimiter   = "-"
 
 Note, that `stage = "dev"` is replaced with `stage = "prod"`.
 
+[Next step (Terraform Null Label) →](./terraform-null-label.md)
+

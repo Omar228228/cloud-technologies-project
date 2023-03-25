@@ -15,4 +15,5 @@ Follow these steps, to setup your Terraform project:
 |[Selecting Terraform version](./docs/tfswitch.md)|
 |[Init provider](./docs/provider.md)|
 |[Declaring variables](./docs/vars.md)|
+|[Terraform Null Label](./docs/terraform-null-label.md)|
 
