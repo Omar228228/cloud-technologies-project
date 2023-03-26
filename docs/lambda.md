@@ -142,7 +142,7 @@ In `lambda-sources` directory create [`get-all-authors.js`](../lambda-sources/ge
 
 After that, start defining `get-all-authors-lambda` module in [`main.tf`](../main.tf) file.
 
-[`main.tf`] is expected to look like this:
+[`main.tf`](../main.tf) is expected to look like this:
 
 ```hcl
 module "courses" {
