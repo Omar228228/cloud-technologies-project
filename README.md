@@ -1,6 +1,6 @@
 # cloud-technologies-project
 
-This repository will contain code for "Cloud Technologies" labs.
+This repository contains code for **Cloud Technologies** labs.
 
 ## Setup
 
