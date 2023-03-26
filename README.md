@@ -17,4 +17,5 @@ Follow these steps, to setup your Terraform project:
 |[Declaring variables](./docs/vars.md)|
 |[Terraform Null Label](./docs/terraform-null-label.md)|
 |[Creating DynamoDB tables](./docs/dynamodb.md)|
+|[IAM roles on DynamoDB tables](./docs/iam-dynamodb-tables.md)|
 

@@ -50,7 +50,7 @@ In [Terraform Null Label](./terraform-null-label.md) step we created `labels` mo
 
 Now we're going to do the same, but for our DynamoDB custom module.
 
-> *Note*
+> **Note**
 > The next command assumes you are in `modules/dynamodb/eu-central-1` directory.
 
 Copy [`context.tf`](../context.tf) file from project root directory to `modules/dynamodb/eu-central-1` directory with command:
@@ -71,7 +71,7 @@ mv main_new.tf main.tf
 Resulting file contents should look like this:
 
 ```hcl
-module "base_labels" {
+module "labels" {
   source = "cloudposse/label/null"
   # Cloud Posse recommends pinning every module to a specific version
   version = "0.25.0"
@@ -102,7 +102,7 @@ resource "aws_dynamodb_table" "this" {
 }
 ```
 
-> *Note*
+> **Note**
 > If you named your `labels` module differently, do not forget to change its name here.
 
 Next, you need to modify this code, so it uses `context` variable, and `aws_dynamodb_table` has name from `labels` module.
@@ -165,4 +165,6 @@ terraform apply -var-file=dev.tfvars
 Check what `terraform` outputs for you. If everything is ok, type `yes`.
 
 Changes to DynamoDB infrastructure will be visible in your AWS console.
+
+[Next step (IAM roles on DynamoDB tables) →](./iam-dynamodb-tables.md)
 
