@@ -206,5 +206,5 @@ and apply changes to your IaC.
 
 You can see final result [in this file](../iam-lambda-roles.tf)
 
-[Next step (Creating AWS Lambdas) →](./lambdas.md)
+[Next step (Creating AWS Lambdas) →](./lambda.md)
 
