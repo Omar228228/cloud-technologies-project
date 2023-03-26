@@ -80,7 +80,7 @@ module "update-course-lambda-role" {
       {
         Effect = "Allow",
         Action = [
-          "dynamodb:UpdateItem",
+          "dynamodb:PutItem",
         ],
         Resource = module.courses.table_arn
       }
