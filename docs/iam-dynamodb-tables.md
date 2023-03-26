@@ -78,7 +78,7 @@ property.
 Next, you need to parametrize `policy` property of `iam_lambda_policy` to
 accept different policies for different lambdas.
 
-For this, create [`variables.tf`](../modules/iam/eu-central-1/variables.tf) file and declare `policy` variable of type `any`:
+For this, create [`variables.tf`](../modules/iam/eu-central-1/variables.tf) file and declare `policy` variable:
 
 ```hcl
 variable "policy" {
@@ -206,4 +206,5 @@ and apply changes to your IaC.
 
 You can see final result [in this file](../iam-lambda-roles.tf)
 
+[Next step (Creating AWS Lambdas) →](./lambdas.md)
 
